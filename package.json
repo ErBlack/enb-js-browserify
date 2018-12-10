@@ -1,0 +1,32 @@
+{
+  "name": "enb-js-browserify",
+  "version": "1.0.0",
+  "description": "A browserify driven alternative to enb-js",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc-markdown-cli ${PWD} && echo \"\n## License \n\n© $(date +%Y) YANDEX LLC. The code is released under the [Mozilla Public License 2.0](LICENSE.txt).\" >> README.md",
+    "version": "npm run docs && git add *.md",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ErBlack/enb-js-browserify.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "enb",
+    "browserify",
+    "bem"
+  ],
+  "author": "ertema",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "enb": "^1.5.1"
+  },
+  "devDependencies": {
+    "jsdoc-markdown-cli": "^1.0.1"
+  }
+}
